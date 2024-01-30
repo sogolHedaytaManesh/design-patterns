@@ -15,9 +15,9 @@ abstract class MessagePublisher
 	}
 
 	/**
-	 * @return Publisher
+	 * @return PublisherContract
 	 */
-	protected function createPublisher(): Publisher
+	protected function createPublisher(): PublisherContract
 	{
 		$className = __NAMESPACE__ . '\\Factories\\' . 'LinkedInPublisherFactory';
 

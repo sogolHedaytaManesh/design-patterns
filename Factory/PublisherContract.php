@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Factory;
 
-interface Publisher
+interface PublisherContract
 {
 	/**
 	 * @param Message $message

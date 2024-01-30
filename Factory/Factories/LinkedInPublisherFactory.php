@@ -1,15 +1,15 @@
 <?php
 
 use DesignPatterns\Factory\MessagePublisher;
-use DesignPatterns\Factory\Publisher;
+use DesignPatterns\Factory\PublisherContract;
 use DesignPatterns\Factory\Factories\Publishers\LinkedInPublisher;
 
 class LinkedInPublisherFactory extends MessagePublisher
 {
 	/**
-	 * @return Publisher
+	 * @return PublisherContract
 	 */
-	protected function createPublisher(): Publisher
+	protected function createPublisher(): PublisherContract
 	{
 		return new LinkedInPublisher();
 	}

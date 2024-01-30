@@ -4,9 +4,9 @@ namespace DesignPatterns\Factory\Factories\Publishers;
 
 use DesignPatterns\Factory\Factories\Publishers\Dependencies\InstagramDependencies;
 use DesignPatterns\Factory\Message;
-use DesignPatterns\Factory\Publisher;
+use DesignPatterns\Factory\PublisherContract;
 
-class InstagramPublisher implements Publisher
+class InstagramPublisher implements PublisherContract
 {
 	/**
 	 * @param InstagramDependencies $instagramDependencies

@@ -3,9 +3,9 @@
 namespace DesignPatterns\Factory\Factories\Publishers;
 
 use DesignPatterns\Factory\Message;
-use DesignPatterns\Factory\Publisher;
+use DesignPatterns\Factory\PublisherContract;
 
-class LinkedInPublisher implements Publisher
+class LinkedInPublisher implements PublisherContract
 {
 	/**
 	 * @param Message $message
