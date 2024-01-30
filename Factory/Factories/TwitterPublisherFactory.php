@@ -1,6 +1,8 @@
 <?php
 
-use Publishers\TwitterPublisher;
+use DesignPatterns\Factory\MessagePublisher;
+use DesignPatterns\Factory\Publisher;
+use DesignPatterns\Factory\Factories\Publishers\TwitterPublisher;
 
 class TwitterPublisherFactory extends MessagePublisher
 {

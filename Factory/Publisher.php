@@ -1,5 +1,7 @@
 <?php
 
+namespace DesignPatterns\Factory;
+
 interface Publisher
 {
 	/**

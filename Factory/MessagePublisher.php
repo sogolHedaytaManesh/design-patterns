@@ -1,4 +1,5 @@
 <?php
+namespace DesignPatterns\Factory;
 
 abstract class MessagePublisher
 {

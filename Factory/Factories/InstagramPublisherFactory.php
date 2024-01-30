@@ -1,14 +1,18 @@
 <?php
 
-use Publishers\InstagramPublisher;
+namespace DesignPatterns\Factory\Factories;
+
+use DesignPatterns\Factory\Factories\Publishers\Dependencies\InstagramDependencies;
+use DesignPatterns\Factory\Factories\Publishers\InstagramPublisher;
+use DesignPatterns\Factory\MessagePublisher;
 
 class InstagramPublisherFactory extends MessagePublisher
 {
 	/**
-	 * @return Publisher
+	 * @return InstagramPublisher
 	 */
-	protected function createPublisher(): Publisher
+	protected function createPublisher(): InstagramPublisher
 	{
-		return new InstagramPublisher(instagramDependencies: 'instagramDependencies');
+		return new InstagramPublisher(new InstagramDependencies());
 	}
 }

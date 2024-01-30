@@ -1,6 +1,8 @@
 <?php
 
-use Publishers\LinkedInPublisher;
+use DesignPatterns\Factory\MessagePublisher;
+use DesignPatterns\Factory\Publisher;
+use DesignPatterns\Factory\Factories\Publishers\LinkedInPublisher;
 
 class LinkedInPublisherFactory extends MessagePublisher
 {

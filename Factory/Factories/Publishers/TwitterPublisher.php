@@ -1,13 +1,17 @@
 <?php
 
-namespace Publishers;
+namespace DesignPatterns\Factory\Factories\Publishers;
 
-use Message;
-use Publisher;
+use DesignPatterns\Factory\Message;
+use DesignPatterns\Factory\Publisher;
 
 class TwitterPublisher implements Publisher
 {
 
+	/**
+	 * @param Message $message
+	 * @return void
+	 */
 	public static function publish(Message $message): void
 	{
 		echo sprintf(
